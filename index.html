@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Game</title>
-    <script defer src="./app.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🇧🇭 Bahrain National Quiz 🇧🇭</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="flag-decoration">🇧🇭</span>
+        <h1>Bahrain National Quiz</h1>
+        <span class="flag-decoration">🇧🇭</span>
+      </div>
 
-    <div id="quiz-container">
-        <div id="question-container">
-            <p id="question">Question will appear here</p>
-        </div>
+      <div class="controls">
+        <button id="startBtn" class="btn">Start Quiz 🎯</button>
+        <button id="restartBtn" class="btn" style="display:none">
+          Restart Quiz 🔄
+        </button>
+        <button id="homeBtn" class="btn">Home 🏠</button>
+      </div>
 
-        <div id="options-container">
-            <button class="option" onclick="checkAnswer(0)">Option 1</button>
-            <button class="option" onclick="checkAnswer(1)">Option 2</button>
-            <button class="option" onclick="checkAnswer(2)">Option 3</button>
-            <button class="option" onclick="checkAnswer(3)">Option 4</button>
-        </div>
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
 
-        <div id="result-container">
-            <p id="result"></p>
-            <button id="next-button" onclick="nextQuestion()">Next Question</button>
-        </div>
+      <div
+        id="questionContainer"
+        class="question-container"
+        style="display:none"
+      >
+        <h2 id="question"></h2>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div id="scoreDisplay" class="score-display"></div>
+      <div id="feedback" class="feedback"></div>
     </div>
 
-    
-</body>
+  </body>
 </html>
