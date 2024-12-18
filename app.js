@@ -15,7 +15,6 @@ const questions = [
     { question: "What is the traditional boat of Bahrain called?", options: ["Dhow", "Felucca", "Sampan", "Junk"], correct: 0 },
     { question: "What is the national flower of Bahrain?", options: ["Bougainvillea", "Rose", "Date Palm Flower", "Lily"], correct: 2 },
     { question: "What is Bahrain's climate?", options: ["Tropical", "Desert", "Mediterranean", "Temperate"], correct: 1 },
-    { question: "What is a famous Bahraini dish?", options: ["Machboos", "Biryani", "Shawarma", "Tabbouleh"], correct: 0 },
     { question: "What is the name of Bahrain's national airline?", options: ["Gulf Air", "Emirates", "Qatar Airways", "Etihad"], correct: 0 },
     { question: "What is the name of Bahrain's king?", options: ["King Hamad", "King Salman", "King Abdullah", "King Khalifa"], correct: 0 },
     { question: "What is Bahrain's national flag color scheme?", options: ["Red and White", "Green and White", "Black and White", "Blue and White"], correct: 0 },
@@ -131,16 +130,16 @@ function endQuiz() {
     let message = '';
 
     if (score === currentQuestions.length) {
-        emoji = '🏆 🇧🇭';
+        emoji = '🏆 ';
         message = 'Perfect! You are a Bahrain Expert!';
     } else if (score >= currentQuestions.length - 1) {
-        emoji = '🌟 🇧🇭';
+        emoji = '🌟 ';
         message = 'Excellent! Almost perfect!';
     } else if (score >= currentQuestions.length - 2) {
-        emoji = '👍 🇧🇭';
+        emoji = '👍 ';
         message = 'Good job! Keep learning!';
     } else {
-        emoji = '💪 🇧🇭';
+        emoji = '💪 ';
         message = 'Keep studying Bahrain\'s history!';
     }
 
